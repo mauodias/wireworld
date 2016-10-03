@@ -20,8 +20,9 @@ As mentioned in the beginning, Wireworld is a cellular automaton. This means tha
   - Conductors
   - Heads
   - Tails
-- Every head will turn its surrounding conductor cells into heads, and will become a tail
+- Every head will become a tail
 - Every tail will become a conductor cell
+- Every conductor surrounded by one or two heads become a head, remains conductor otherwise
 - Blanks do not interact with the other cells
 
 This small set of rules is everything that we need to make the Wireworld exist. All of its behaviors are based on these rules.
