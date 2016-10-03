@@ -9,25 +9,19 @@
 #define H 500
 #endif
 
-enum CELLSTATE {
+typedef enum CELLSTATE {
   BLANK,
   CONDUCTOR,
   HEAD,
   TAIL
-};
+} CELLSTATE;
 
-typedef enum CELLSTATE CELLSTATE;
-
-struct cell {
+typedef struct cell {
   int state:2;
-};
+} cell;
 
-typedef struct cell cell;
-
-struct generation {
+typedef struct generation {
   cell cells[W][H];
-};
-
-typedef struct generation generation;
+} generation;
 
 #endif // STRUCTURES_H
