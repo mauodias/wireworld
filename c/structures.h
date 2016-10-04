@@ -1,3 +1,5 @@
+#include <stdlib.h>
+
 #ifndef STRUCTURES_H
 #define STRUCTURES_H
 
@@ -17,7 +19,7 @@ typedef enum CELLSTATE {
 } CELLSTATE;
 
 typedef struct cell {
-  int state:2;
+  uint8_t state;
 } cell;
 
 typedef struct generation {
